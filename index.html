@@ -1,75 +1,83 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-<title></title>
-
+<title>html常用标签</title>
 <style type="text/css" media="all">
-
     .box {
-
-        height: 40px;
-
-        border-top: 3px solid #ff8500;
-
-        border-bottom: 1px solid #edeef0;
-
+        width: 85%;
+        height: 90px;
+        background-color: rgb(255,255,255);
+        border-left: 5px solid orange;
+        border-top: 1px solid orange;
+        border-right: 1px solid orange;
+        border-bottom: 1px solid orange;
     }
-
-    div>a{
-
-        text-decoration: none;
-
-        display: inline-block;
-
-        height: 40px;
-
-        text-align: center;
-
-        line-height: 40px;
-
-        font-size: 12px;
-
-        color: #4c4c4c;
-
-        padding: 0px 16px;
-
-        /*0 px可以省略*/
-
+    h6{
+    margin-bottom: 10px;
     }
-
-    div>a:hover{
-
-        color: #ff8400;
-
-        background-color: #edeef0;
-
+    #kuozhan{
+        height: 120px;
     }
-
-    /*总结: 老师版的太细了,果然细节决定成败*/
-
+    
+    #btn1{
+        margin-right: 160px;
+    }
+    .button{
+        width: 100px;
+        background-color: orange;
+        border: 1px solid gray;
+    }
+    .button:hover{
+        background-color: #f8bf46;
+    }
 </style>
-
 </head>
-
 <body>
-
+<h6>5、加粗有两个标签: (推荐strong)</h6>
 <div class="box">
-
-<a href="#">新浪</a>
-
-<a href="#">新浪导航新浪导航</a>
-
-<a href="#">新浪导航</a>
-
-<a href="#">新浪导航</a>
-
+&nbsp;&lt;b&gt;加粗内容&lt;/b&gt;&nbsp;只显示加粗<br />
+&nbsp;&lt;strong&gt;强调的内容&lt;/strong&gt;&nbsp;突出的文本
+<hr />
+&nbsp;实战: <strong>这是一个加粗的文本</strong>
 </div>
+<br />
 
+<h6>6、倾斜有两个标签: (推荐em)</h6>
+<div class="box">
+&nbsp;&lt;i&gt;倾斜内容&lt;/i&gt;<br />
+&nbsp;&lt;em&gt;倾斜的内容&lt;/em&gt;
+<hr />
+&nbsp;实战: <em>这是一个倾斜的文本</em>
+</div>
+<br />
+
+<h6>7、删除线有两个标签: (推荐del)</h6>
+<div class="box">
+&nbsp;&lt;s&gt;删除线&lt;/s&gt;&nbsp;<br />
+&nbsp;&lt;del&gt;删除线&lt;/del&gt;&nbsp;
+<hr />
+&nbsp;实战: <del>这是一个删除线文本</del>
+</div>
+<br />
+
+<h6>8、扩展</h6>
+<div class="box" id="kuozhan">
+&nbsp;&lt;u&gt;下划线文本&lt;/u&gt;&nbsp;<br />
+&nbsp;&lt;sub&gt;&lt;/sub&gt;&nbsp;下标 <br />
+&nbsp;&lt;sup&gt;&lt;/sup&gt;&nbsp;上标
+<hr />
+&nbsp;实战: <u>下划线文本</u> <br />
+</div>
+<br />
+<input id="btn1" class="button" type="button" value="上一页" onclick="previouPage()" />
+<a href="./我的第一个网页.html"><input type="button" class="button" id="btn2" value="下一页" /></a>
+<center>第1页</center>
+<script type="text/javascript" charset="utf-8">
+    function previouPage(){
+        alert("这已经是第一页了!");
+        return;
+    }
+</script>
 </body>
-
 </html>
